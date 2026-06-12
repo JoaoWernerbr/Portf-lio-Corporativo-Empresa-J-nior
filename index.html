@@ -2,45 +2,214 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa Júnior</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Empresa Júnior de Tecnologia especializada em desenvolvimento de sites, sistemas web e soluções digitais sob medida." />
+    <meta name="theme-color" content="#0b1120" />
+    <title> — Empresa Júnior de Tecnologia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#inicio" class="logo">
+                <span class="logo__mark">       </span>
+                <span class="logo__text">   <strong>                        </strong> </strong></span>
+            </a>
 
-    <header class="topo">
-        <div class="logo">
-            <h2>Empresa Júnior</h2>
+            <nav class="nav" id="nav">
+                <a href="#sobre" class="nav__link">Sobre nós</a>
+                <a href="#servicos" class="nav__link">Serviços</a>
+                <a href="#equipe" class="nav__link">Equipe</a>
+                <a href="#contato" class="nav__link">Contato</a>
+                <a href="#contato" class="btn btn--primary nav__cta">Fale conosco</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
         </div>
     </header>
 
-    <main class="hero">
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="inicio">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <div class="container hero__inner">
+                <p class="hero__eyebrow">Empresa Júnior de Tecnologia</p>
+                <h1 class="hero__title">
+                    Transformamos ideias em <span class="grad">soluções digitais</span> reais
+                </h1>
+                <p class="hero__subtitle">
+                    Somos um time de estudantes apaixonados por tecnologia. Criamos sites, sistemas web e experiências digitais sob medida, com preço acessível e qualidade profissional.
+                </p>
+                <div class="hero__actions">
+                    <a href="#contato" class="btn btn--primary">Solicitar orçamento</a>
+                    <a href="#servicos" class="btn btn--ghost">Ver serviços</a>
+                </div>
 
-        <h1 id="titulo"></h1>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <span class="stat__value"><span class="stat__num" data-target="  1  ">0</span><span class="stat__plus">+</span></span>
+                        <p class="stat__label">Projetos entregues</p>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value"><span class="stat__num" data-target="40">0</span><span class="stat__plus">+</span></span>
+                        <p class="stat__label">Clientes satisfeitos</p>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value"><span class="stat__num" data-target="15">0</span></span>
+                        <p class="stat__label">Membros no time</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p id="p1">
-            Onde a inovação e a tecnologia se unem para transformar ideias em soluções reais.
-        </p>
+        <!-- Sobre -->
+        <section class="section" id="sobre">
+            <div class="container about">
+                <div class="about__media">
+                    <img src="images/hero-tech.png" alt="Representação abstrata de tecnologia e conexões digitais" loading="lazy" />
+                </div>
+                <div class="about__content">
+                    <p class="section__eyebrow">Sobre nós</p>
+                    <h2 class="section__title">Conhecimento acadêmico aplicado a projetos reais</h2>
+                    <p class="section__text">
+                        A Nexus Jr é uma empresa júnior formada por estudantes de tecnologia que unem teoria e prática para entregar soluções de alto nível. Cada projeto é uma oportunidade de aprendizado, e por isso colocamos dedicação total no que fazemos.
+                    </p>
+                    <ul class="about__list">
+                        <li><span class="check">✓</span> Foco total na necessidade do cliente</li>
+                        <li><span class="check">✓</span> Preços justos e acessíveis</li>
+                        <li><span class="check">✓</span> Acompanhamento por professores e mentores</li>
+                        <li><span class="check">✓</span> Tecnologia atual e boas práticas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-        <p id="p2">
-            Somos uma Empresa Júnior de ADS e Engenharia de Software.
-        </p>
+        <!-- Serviços -->
+        <section class="section section--alt" id="servicos">
+            <div class="container">
+                <div class="section__head">
+                    <p class="section__eyebrow">Serviços</p>
+                    <h2 class="section__title">O que podemos construir para você</h2>
+                    <p class="section__text section__text--center">
+                        Desenvolvimento web sob medida, do conceito ao lançamento.
+                    </p>
+                </div>
 
-        <a href="pages/sobre.html" class="btn" id="btn">
-            Conheça Nossa Empresa
+                <div class="cards">
+                    <article class="card">
+                        <div class="card__icon">&#60;/&#62;</div>
+                        <h3 class="card__title">Sites Institucionais</h3>
+                        <p class="card__text">Sites modernos e responsivos que apresentam sua empresa com credibilidade e impacto.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon">&#9881;</div>
+                        <h3 class="card__title">Sistemas Web</h3>
+                        <p class="card__text">Plataformas e sistemas personalizados para automatizar e otimizar o seu negócio.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon">&#128241;</div>
+                        <h3 class="card__title">Landing Pages</h3>
+                        <p class="card__text">Páginas focadas em conversão para campanhas, produtos e captação de clientes.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card__icon">&#128200;</div>
+                        <h3 class="card__title">Otimização & SEO</h3>
+                        <p class="card__text">Melhoria de performance e posicionamento para seu site ser encontrado no Google.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Equipe -->
+        <section class="section" id="equipe">
+            <div class="container">
+                <div class="section__head">
+                    <p class="section__eyebrow">Equipe</p>
+                    <h2 class="section__title">As pessoas por trás dos projetos</h2>
+                    <p class="section__text section__text--center">
+                        Um time multidisciplinar e dedicado a entregar o melhor.
+                    </p>
+                </div>
+
+                <div class="team">
+
+                    <article class="member">
+                        <!-- Substitua o texto COLE_O_LINK_DA_FOTO_AQUI pelo link real da imagem do LinkedIn -->
+                        <img class="member__avatar" src="COLE_O_LINK_DA_FOTO_AQUI" alt="Foto de Lore Camis" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+
+                        <h3 class="member__name">
+                            <a href="https://www.linkedin.com/in/lore-camis?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
+            Lore Camis
         </a>
+                        </h3>
 
+                        <!-- Substitua o texto abaixo pelo cargo correto dela -->
+                        <p class="member__role"> </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="section section--alt" id="contato">
+            <div class="container contact">
+                <div class="contact__info">
+                    <p class="section__eyebrow">Contato</p>
+                    <h2 class="section__title">Vamos tirar seu projeto do papel?</h2>
+                    <p class="section__text">
+                        Conte pra gente o que você precisa. Respondemos rápido e sem compromisso.
+                    </p>
+                    <ul class="contact__list">
+                        <li><span class="contact__ic">              </span> </li>
+                </div>
+
+                <form class="form" id="contactForm" novalidate>
+                    <div class="form__row">
+                        <label class="form__field">
+              <span>Nome</span>
+              <input type="text" name="nome" required placeholder="Seu nome" />
+            </label>
+                        <label class="form__field">
+              <span>E-mail</span>
+              <input type="email" name="email" required placeholder="voce@email.com" />
+            </label>
+                    </div>
+                    <label class="form__field">
+            <span>Assunto</span>
+            <input type="text" name="assunto" placeholder="Sobre o que é?" />
+          </label>
+                    <label class="form__field">
+            <span>Mensagem</span>
+            <textarea name="mensagem" rows="4" required placeholder="Descreva seu projeto..."></textarea>
+          </label>
+                    <button type="submit" class="btn btn--primary btn--full">Enviar mensagem</button>
+                    <p class="form__feedback" id="formFeedback" role="status"></p>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>© 2026 Empresa Júnior - Todos os direitos reservados</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="#inicio" class="logo">
+                <span class="logo__mark">               </span>
+                <span class="logo__text">               <strong>         </strong></span>
+            </a>
+            <p class="footer__text">© <span id="year"></span> — Empresa Júnior de Tecnologia. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
