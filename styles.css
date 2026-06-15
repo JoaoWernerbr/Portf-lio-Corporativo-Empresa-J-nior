@@ -419,12 +419,19 @@ img {
     gap: 1.5rem;
 }
 
+
+/* ===== Team ===== */
+
 .member {
     background: var(--surface-2);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     transition: transform .25s ease, border-color .25s ease;
 }
 
@@ -434,33 +441,34 @@ img {
 }
 
 .member__avatar {
-    width: 84px;
-    height: 84px;
-    margin: 0 auto 1rem;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--accent));
-    display: grid;
-    place-items: center;
-    color: #04201c;
-    font-family: var(--font-head);
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-
-.member__avatar::after {
-    content: attr(data-initials);
+    object-fit: cover;
+    margin: 0;
+    display: block;
 }
 
 .member__name {
+    margin: 0;
     font-family: var(--font-head);
     font-weight: 600;
     font-size: 1.1rem;
 }
 
+.member__name a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.member__name a:hover {
+    color: var(--accent);
+}
+
 .member__role {
+    margin: 0;
     color: var(--muted);
     font-size: .9rem;
-    margin-top: .25rem;
 }
 
 
@@ -661,4 +669,12 @@ img {
         opacity: 1;
         transform: none;
     }
+}
+
+.member__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary);
 }
